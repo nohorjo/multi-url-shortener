@@ -1,0 +1,14 @@
+<form action="new" method="post">
+    <input type="button" onclick="addUrl()" value="Add"/>
+    <input type="submit" value="Generate" />
+</form>
+<script>
+    function addUrl() {
+        const e = document.createElement('input');
+        e.type = 'text';
+        e.name = `urls`;
+
+        document.forms[0].prepend(e);
+    }
+    addUrl();
+</script>
